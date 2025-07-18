@@ -1,0 +1,1227 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Self-hosted Inter Font */
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter/Inter-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter/Inter-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter/Inter-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter/Inter-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter/Inter-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter/Inter-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter/Inter-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Self-hosted Space Grotesk Font */
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('/fonts/SpaceGrotesk/SpaceGrotesk-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('/fonts/SpaceGrotesk/SpaceGrotesk-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('/fonts/SpaceGrotesk/SpaceGrotesk-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('/fonts/SpaceGrotesk/SpaceGrotesk-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('/fonts/SpaceGrotesk/SpaceGrotesk-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Self-hosted Outfit Font */
+@font-face {
+  font-family: 'Outfit';
+  src: url('/fonts/Outfit/Outfit-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('/fonts/Outfit/Outfit-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('/fonts/Outfit/Outfit-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('/fonts/Outfit/Outfit-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('/fonts/Outfit/Outfit-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('/fonts/Outfit/Outfit-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('/fonts/Outfit/Outfit-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --foreground-rgb: 230, 230, 230;
+  --background-start-rgb: 13, 13, 26;
+  --background-end-rgb: 26, 26, 46;
+}
+
+@layer base {
+  :root {
+    --background: 220 39% 8%;
+    --foreground: 0 0% 90%;
+    --card: 220 39% 10%;
+    --card-foreground: 0 0% 90%;
+    --popover: 220 39% 10%;
+    --popover-foreground: 0 0% 90%;
+    --primary: 199 89% 48%;
+    --primary-foreground: 220 39% 8%;
+    --secondary: 220 39% 15%;
+    --secondary-foreground: 0 0% 90%;
+    --muted: 220 39% 12%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 240 100% 82%;
+    --accent-foreground: 220 39% 8%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 39% 18%;
+    --input: 220 39% 15%;
+    --ring: 199 89% 48%;
+    --chart-1: 199 89% 48%;
+    --chart-2: 240 100% 82%;
+    --chart-3: 280 100% 70%;
+    --chart-4: 47 96% 89%;
+    --chart-5: 142 76% 36%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    background: linear-gradient(135deg, #0d0d1a 0%, #1a1a2e 50%, #16213e 100%);
+    min-height: 100vh;
+    font-feature-settings: 'cv11', 'ss01';
+    font-variation-settings: 'opsz' 32;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+  /* Enhanced Typography System */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    line-height: 1.2;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1 {
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+  }
+
+  h2 {
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+
+  h3 {
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+  }
+
+  h4 {
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  }
+
+  h5, h6 {
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  /* Body text improvements */
+  p {
+    line-height: 1.6;
+    font-weight: 400;
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+  }
+
+  /* Enhanced readability for descriptions */
+  .text-muted-foreground {
+    line-height: 1.65;
+    font-weight: 400;
+  }
+
+  /* Button typography */
+  button {
+    font-family: 'Outfit', 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+  }
+
+  /* Code and monospace */
+  code, pre {
+    font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+    font-weight: 500;
+  }
+}
+
+/* Enhanced cosmic grid pattern for background */
+.bg-cosmic-grid {
+  background-image: 
+    radial-gradient(circle at 25px 25px, rgba(125, 211, 252, 0.08) 2px, transparent 0),
+    radial-gradient(circle at 75px 75px, rgba(159, 159, 255, 0.06) 1px, transparent 0);
+  background-size: 100px 100px, 150px 150px;
+  animation: cosmicGridFloat 20s ease-in-out infinite;
+}
+
+@keyframes cosmicGridFloat {
+  0%, 100% {
+    background-position: 0% 0%, 0% 0%;
+  }
+  25% {
+    background-position: 10% 5%, -5% 10%;
+  }
+  50% {
+    background-position: -5% 10%, 10% -5%;
+  }
+  75% {
+    background-position: 5% -10%, -10% 5%;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, hsl(var(--primary)), hsl(var(--accent)));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, hsl(var(--accent)), hsl(var(--primary)));
+}
+
+/* Lunar glow animations */
+@keyframes lunarGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(125, 211, 252, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(125, 211, 252, 0.6), 0 0 60px rgba(159, 159, 255, 0.3);
+  }
+}
+
+@keyframes stellarPulse {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes cosmicFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes textGlow {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(125, 211, 252, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(125, 211, 252, 0.6), 0 0 30px rgba(159, 159, 255, 0.4);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInScale {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.lunar-glow {
+  animation: lunarGlow 3s ease-in-out infinite;
+}
+
+.stellar-pulse {
+  animation: stellarPulse 2s ease-in-out infinite;
+}
+
+.cosmic-float {
+  animation: cosmicFloat 6s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-slide-in-scale {
+  animation: slideInScale 0.6s ease-out forwards;
+}
+
+/* Enhanced logo animations */
+
+/* Main breathing animation with multiple effects */
+@keyframes lunarBreathingEnhanced {
+  0% {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);
+    filter: 
+      drop-shadow(0 0 30px rgba(125, 211, 252, 0.5)) 
+      drop-shadow(0 0 60px rgba(159, 159, 255, 0.3))
+      hue-rotate(0deg)
+      brightness(1);
+  }
+  25% {
+    transform: perspective(1000px) rotateX(2deg) rotateY(-1deg) rotateZ(1deg) scale(1.03);
+    filter: 
+      drop-shadow(0 0 40px rgba(125, 211, 252, 0.7)) 
+      drop-shadow(0 0 80px rgba(159, 159, 255, 0.4))
+      hue-rotate(5deg)
+      brightness(1.1);
+  }
+  50% {
+    transform: perspective(1000px) rotateX(0deg) rotateY(2deg) rotateZ(-1deg) scale(1.06);
+    filter: 
+      drop-shadow(0 0 50px rgba(125, 211, 252, 0.9)) 
+      drop-shadow(0 0 100px rgba(159, 159, 255, 0.6))
+      hue-rotate(10deg)
+      brightness(1.2);
+  }
+  75% {
+    transform: perspective(1000px) rotateX(-1deg) rotateY(-2deg) rotateZ(2deg) scale(1.03);
+    filter: 
+      drop-shadow(0 0 40px rgba(125, 211, 252, 0.7)) 
+      drop-shadow(0 0 80px rgba(159, 159, 255, 0.4))
+      hue-rotate(5deg)
+      brightness(1.1);
+  }
+  100% {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);
+    filter: 
+      drop-shadow(0 0 30px rgba(125, 211, 252, 0.5)) 
+      drop-shadow(0 0 60px rgba(159, 159, 255, 0.3))
+      hue-rotate(0deg)
+      brightness(1);
+  }
+}
+
+/* Orbital glow animation */
+@keyframes orbitalGlow {
+  0% {
+    box-shadow: 
+      0 0 0 0 rgba(125, 211, 252, 0.4),
+      0 0 0 10px rgba(159, 159, 255, 0.2),
+      0 0 0 20px rgba(125, 211, 252, 0.1);
+  }
+  50% {
+    box-shadow: 
+      0 0 0 10px rgba(125, 211, 252, 0.6),
+      0 0 0 25px rgba(159, 159, 255, 0.4),
+      0 0 0 40px rgba(125, 211, 252, 0.2);
+  }
+  100% {
+    box-shadow: 
+      0 0 0 0 rgba(125, 211, 252, 0.4),
+      0 0 0 10px rgba(159, 159, 255, 0.2),
+      0 0 0 20px rgba(125, 211, 252, 0.1);
+  }
+}
+
+/* Energy particles animation */
+@keyframes energyParticles {
+  0%, 100% {
+    background-position: 0% 0%, 100% 100%, 50% 0%, 0% 100%;
+  }
+  25% {
+    background-position: 25% 25%, 75% 75%, 75% 25%, 25% 75%;
+  }
+  50% {
+    background-position: 50% 50%, 50% 50%, 100% 50%, 50% 50%;
+  }
+  75% {
+    background-position: 75% 25%, 25% 75%, 25% 75%, 75% 25%;
+  }
+}
+
+/* Magnetic field animation */
+@keyframes magneticField {
+  0% {
+    background: 
+      radial-gradient(circle at 20% 20%, rgba(125, 211, 252, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(159, 159, 255, 0.1) 0%, transparent 50%);
+  }
+  33% {
+    background: 
+      radial-gradient(circle at 80% 20%, rgba(125, 211, 252, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 20% 80%, rgba(159, 159, 255, 0.15) 0%, transparent 50%);
+  }
+  66% {
+    background: 
+      radial-gradient(circle at 50% 80%, rgba(125, 211, 252, 0.12) 0%, transparent 50%),
+      radial-gradient(circle at 50% 20%, rgba(159, 159, 255, 0.12) 0%, transparent 50%);
+  }
+  100% {
+    background: 
+      radial-gradient(circle at 20% 20%, rgba(125, 211, 252, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(159, 159, 255, 0.1) 0%, transparent 50%);
+  }
+}
+
+/* Main logo class with multiple animations */
+.hero-logo-enhanced {
+  position: relative;
+  animation: lunarBreathingEnhanced 6s ease-in-out infinite;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform, filter;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* Pseudo-elements for additional effects */
+.hero-logo-enhanced::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  animation: orbitalGlow 4s ease-in-out infinite;
+  z-index: -1;
+}
+
+.hero-logo-enhanced::after {
+  content: '';
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  right: -40px;
+  bottom: -40px;
+  border-radius: 50%;
+  animation: magneticField 8s linear infinite;
+  z-index: -2;
+  opacity: 0.6;
+}
+
+/* Hover effects with multiple transformations */
+.hero-logo-enhanced:hover {
+  animation-play-state: paused;
+  transform: 
+    perspective(1000px) 
+    rotateX(15deg) 
+    rotateY(5deg) 
+    rotateZ(-2deg) 
+    scale(1.12);
+  filter: 
+    drop-shadow(0 0 60px rgba(125, 211, 252, 1.0)) 
+    drop-shadow(0 0 120px rgba(159, 159, 255, 0.8)) 
+    drop-shadow(0 15px 35px rgba(0, 0, 0, 0.4))
+    hue-rotate(15deg)
+    brightness(1.3)
+    contrast(1.1);
+}
+
+.hero-logo-enhanced:hover::before {
+  animation-duration: 1s;
+  box-shadow: 
+    0 0 0 15px rgba(125, 211, 252, 0.8),
+    0 0 0 35px rgba(159, 159, 255, 0.6),
+    0 0 0 55px rgba(125, 211, 252, 0.3);
+}
+
+.hero-logo-enhanced:hover::after {
+  animation-duration: 2s;
+  opacity: 1;
+}
+
+/* Active state */
+.hero-logo-enhanced:active {
+  transform: 
+    perspective(1000px) 
+    rotateX(10deg) 
+    rotateY(3deg) 
+    rotateZ(-1deg) 
+    scale(1.08);
+  transition: transform 0.1s ease-out;
+  filter: 
+    drop-shadow(0 0 40px rgba(125, 211, 252, 0.9)) 
+    drop-shadow(0 0 80px rgba(159, 159, 255, 0.7))
+    brightness(1.1);
+}
+
+/* Container for energy particles */
+.logo-energy-container {
+  position: relative;
+  display: inline-block;
+}
+
+.logo-energy-container::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  right: -60px;
+  bottom: -60px;
+  background: 
+    radial-gradient(2px 2px at 20% 30%, rgba(125, 211, 252, 0.8), transparent),
+    radial-gradient(2px 2px at 40% 70%, rgba(159, 159, 255, 0.6), transparent),
+    radial-gradient(1px 1px at 90% 40%, rgba(125, 211, 252, 0.7), transparent),
+    radial-gradient(1px 1px at 60% 10%, rgba(159, 159, 255, 0.5), transparent);
+  background-size: 100px 100px, 80px 80px, 60px 60px, 120px 120px;
+  animation: energyParticles 12s linear infinite;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Additional animations for different states */
+@keyframes logoEntrance {
+  0% {
+    transform: perspective(1000px) rotateY(180deg) scale(0.5);
+    opacity: 0;
+    filter: blur(10px);
+  }
+  50% {
+    transform: perspective(1000px) rotateY(90deg) scale(0.8);
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(0deg) scale(1);
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+.hero-logo-entrance {
+  animation: logoEntrance 2s ease-out forwards;
+}
+
+/* Click pulse animation */
+@keyframes clickPulse {
+  0% {
+    transform: perspective(1000px) scale(1);
+  }
+  50% {
+    transform: perspective(1000px) scale(1.15);
+    filter: 
+      drop-shadow(0 0 80px rgba(125, 211, 252, 1.2)) 
+      drop-shadow(0 0 160px rgba(159, 159, 255, 1.0));
+  }
+  100% {
+    transform: perspective(1000px) scale(1);
+  }
+}
+
+.hero-logo-pulse {
+  animation: clickPulse 0.6s ease-out;
+}
+
+/* Original animation for regular logo */
+@keyframes lunarBreathing {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 20px rgba(125, 211, 252, 0.4)) drop-shadow(0 0 40px rgba(159, 159, 255, 0.2));
+  }
+  50% {
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 30px rgba(125, 211, 252, 0.7)) drop-shadow(0 0 60px rgba(159, 159, 255, 0.4));
+  }
+}
+
+.hero-logo {
+  animation: lunarBreathing 4s ease-in-out infinite;
+  filter: drop-shadow(0 0 20px rgba(125, 211, 252, 0.4));
+  transition: transform 0.3s ease;
+}
+
+.hero-logo:hover {
+  animation-play-state: paused;
+  transform: scale(1.12);
+  filter: drop-shadow(0 0 40px rgba(125, 211, 252, 0.8)) drop-shadow(0 0 80px rgba(159, 159, 255, 0.5));
+}
+
+/* Enhanced navbar styles */
+.navbar-cosmic {
+  background: rgba(13, 13, 26, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(125, 211, 252, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Enhanced card styles */
+.card-cosmic {
+  background: linear-gradient(135deg, rgba(26, 26, 46, 0.8) 0%, rgba(22, 33, 62, 0.6) 100%);
+  border: 1px solid rgba(125, 211, 252, 0.2);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(125, 211, 252, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.card-cosmic:hover {
+  border-color: rgba(125, 211, 252, 0.4);
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.4),
+    0 0 30px rgba(125, 211, 252, 0.2),
+    inset 0 1px 0 rgba(125, 211, 252, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Button enhancements */
+.btn-cosmic-primary {
+  background: linear-gradient(135deg, #7dd3fc 0%, #9f9fff 100%);
+  color: #0d0d1a;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 15px rgba(125, 211, 252, 0.3);
+  font-family: 'Outfit', 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  transition: all 0.3s ease;
+}
+
+.btn-cosmic-primary:hover {
+  background: linear-gradient(135deg, #9f9fff 0%, #7dd3fc 100%);
+  box-shadow: 
+    0 6px 20px rgba(125, 211, 252, 0.4),
+    0 0 30px rgba(159, 159, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn-cosmic-secondary {
+  background: rgba(26, 26, 46, 0.8);
+  color: #e6e6e6;
+  border: 2px solid rgba(125, 211, 252, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  font-family: 'Outfit', 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  transition: all 0.3s ease;
+}
+
+.btn-cosmic-secondary:hover {
+  background: rgba(125, 211, 252, 0.1);
+  border-color: rgba(125, 211, 252, 0.6);
+  box-shadow: 
+    0 6px 20px rgba(0, 0, 0, 0.4),
+    0 0 25px rgba(125, 211, 252, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Section background variations */
+.section-cosmic-alt {
+  background: linear-gradient(135deg, #16213e 0%, #1a1a2e 50%, #0d0d1a 100%);
+  position: relative;
+}
+
+.section-cosmic-alt::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(125, 211, 252, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(159, 159, 255, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Focus styles for accessibility */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid hsl(var(--primary));
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(125, 211, 252, 0.2);
+}
+
+/* Enhanced metallic filter for logo */
+.logo-cosmic-filter {
+  filter: 
+    contrast(1.2) 
+    brightness(1.1) 
+    saturate(1.1)
+    hue-rotate(5deg);
+  transition: filter 0.3s ease;
+}
+
+.logo-cosmic-filter:hover {
+  filter: 
+    contrast(1.3) 
+    brightness(1.2) 
+    saturate(1.2)
+    hue-rotate(10deg);
+}
+
+/* Cosmic particles effect - Enhanced with subtle movement */
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg); 
+    opacity: 0.4;
+  }
+  33% { 
+    transform: translateY(-15px) rotate(120deg); 
+    opacity: 0.8;
+  }
+  66% { 
+    transform: translateY(8px) rotate(240deg); 
+    opacity: 0.6;
+  }
+}
+
+@keyframes drift {
+  0%, 100% { 
+    transform: translateX(0px) translateY(0px); 
+  }
+  25% { 
+    transform: translateX(10px) translateY(-5px); 
+  }
+  50% { 
+    transform: translateX(-5px) translateY(10px); 
+  }
+  75% { 
+    transform: translateX(-10px) translateY(-8px); 
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% { 
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% { 
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+.cosmic-particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: radial-gradient(circle, rgba(125, 211, 252, 0.9) 0%, rgba(159, 159, 255, 0.6) 50%, transparent 100%);
+  border-radius: 50%;
+  animation: 
+    float 8s ease-in-out infinite,
+    drift 12s linear infinite,
+    twinkle 4s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+.cosmic-particle:nth-child(1) { 
+  top: 20%; 
+  left: 20%; 
+  animation-delay: 0s, 0s, 0s; 
+  animation-duration: 8s, 15s, 3s;
+}
+
+.cosmic-particle:nth-child(2) { 
+  top: 60%; 
+  left: 80%; 
+  animation-delay: 2s, 3s, 1s; 
+  animation-duration: 10s, 18s, 4s;
+}
+
+.cosmic-particle:nth-child(3) { 
+  top: 80%; 
+  left: 40%; 
+  animation-delay: 4s, 6s, 2s; 
+  animation-duration: 12s, 20s, 5s;
+}
+
+/* Input field enhancements */
+.input-cosmic {
+  background: rgba(26, 26, 46, 0.6);
+  border: 1px solid rgba(125, 211, 252, 0.2);
+  color: #e6e6e6;
+  backdrop-filter: blur(10px);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.input-cosmic:focus {
+  border-color: rgba(125, 211, 252, 0.6);
+  box-shadow: 0 0 0 3px rgba(125, 211, 252, 0.1);
+  background: rgba(26, 26, 46, 0.8);
+}
+
+.input-cosmic::placeholder {
+  color: rgba(230, 230, 230, 0.5);
+  font-weight: 400;
+}
+
+/* Progress bar cosmic styling */
+.progress-cosmic {
+  background: rgba(26, 26, 46, 0.6);
+  border: 1px solid rgba(125, 211, 252, 0.2);
+}
+
+.progress-cosmic > div {
+  background: linear-gradient(90deg, #7dd3fc 0%, #9f9fff 100%);
+  box-shadow: 0 0 10px rgba(125, 211, 252, 0.5);
+}
+
+/* Badge cosmic styling */
+.badge-cosmic {
+  background: linear-gradient(135deg, rgba(125, 211, 252, 0.2) 0%, rgba(159, 159, 255, 0.2) 100%);
+  color: #7dd3fc;
+  border: 1px solid rgba(125, 211, 252, 0.3);
+  backdrop-filter: blur(10px);
+  font-family: 'Outfit', 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+}
+
+.badge-cosmic-destructive {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.2) 0%, rgba(220, 38, 38, 0.2) 100%);
+  color: #fca5a5;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  font-family: 'Outfit', 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+}
+
+/* Typography enhancements */
+.text-cosmic-glow {
+  text-shadow: 0 0 10px rgba(125, 211, 252, 0.5);
+  animation: textGlow 3s ease-in-out infinite;
+}
+
+.heading-cosmic {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  background: linear-gradient(135deg, #e6e6e6 0%, #7dd3fc 50%, #9f9fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: shimmer 3s ease-in-out infinite;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-shadow: 0 0 30px rgba(125, 211, 252, 0.3);
+}
+
+@keyframes shimmer {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Enhanced brand name styling */
+.brand-name {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  background: linear-gradient(135deg, #e6e6e6 0%, #7dd3fc 50%, #9f9fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(125, 211, 252, 0.4);
+}
+
+/* FIXED AUTH DIALOG STYLES - NO MOVEMENT ON HOVER */
+.auth-dialog-fixed {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 100% !important;
+  max-width: 448px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transition: none !important;
+  animation: none !important;
+  z-index: 50 !important;
+}
+
+.auth-dialog-fixed * {
+  transition: none !important;
+  transform: none !important;
+  animation: none !important;
+}
+
+.auth-dialog-fixed:hover {
+  transform: translate(-50%, -50%) !important;
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+}
+
+.auth-dialog-fixed .card-cosmic {
+  transition: none !important;
+  transform: none !important;
+  animation: none !important;
+  position: static !important;
+}
+
+.auth-dialog-fixed .card-cosmic:hover {
+  transform: none !important;
+  border-color: rgba(125, 211, 252, 0.2) !important;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(125, 211, 252, 0.1) !important;
+}
+
+/* Enhanced input field styling for better contrast */
+.auth-dialog-fixed input {
+  background: rgba(26, 26, 46, 0.8) !important;
+  border: 1px solid rgba(125, 211, 252, 0.3) !important;
+  color: #e6e6e6 !important;
+}
+
+.auth-dialog-fixed input:focus {
+  border-color: rgba(125, 211, 252, 0.6) !important;
+  box-shadow: 0 0 0 3px rgba(125, 211, 252, 0.1) !important;
+  background: rgba(26, 26, 46, 0.9) !important;
+}
+
+.auth-dialog-fixed input::placeholder {
+  color: rgba(230, 230, 230, 0.6) !important;
+}
+
+/* Enhanced label styling */
+.auth-dialog-fixed label {
+  color: #e6e6e6 !important;
+  font-weight: 600 !important;
+}
+
+/* Enhanced button styling */
+.auth-dialog-fixed .btn-cosmic-primary {
+  background: linear-gradient(135deg, #7dd3fc 0%, #9f9fff 100%) !important;
+  color: #0d0d1a !important;
+  border: none !important;
+  font-weight: 600 !important;
+}
+
+.auth-dialog-fixed .btn-cosmic-primary:hover {
+  background: linear-gradient(135deg, #9f9fff 0%, #7dd3fc 100%) !important;
+  transform: translateY(-1px) !important;
+}
+
+.auth-dialog-fixed .btn-cosmic-primary:disabled {
+  opacity: 0.6 !important;
+  cursor: not-allowed !important;
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  .auth-dialog-fixed {
+    max-width: 90vw !important;
+    margin: 0 5vw !important;
+  }
+  
+  .hero-logo-enhanced {
+    animation: lunarBreathingEnhanced 7s ease-in-out infinite;
+  }
+  
+  .hero-logo-enhanced:hover {
+    transform: 
+      perspective(800px) 
+      rotateX(10deg) 
+      rotateY(3deg) 
+      rotateZ(-1deg) 
+      scale(1.06);
+  }
+  
+  .hero-logo {
+    animation: lunarBreathing 5s ease-in-out infinite;
+  }
+  
+  .card-cosmic {
+    backdrop-filter: blur(8px);
+  }
+  
+  .cosmic-particle {
+    width: 2px;
+    height: 2px;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 8vw, 3rem);
+    letter-spacing: 0.015em;
+  }
+
+  h2 {
+    font-size: clamp(1.75rem, 6vw, 2.5rem);
+    letter-spacing: 0.02em;
+  }
+
+  h3 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    letter-spacing: 0.025em;
+  }
+
+  p {
+    font-size: clamp(0.875rem, 3vw, 1rem);
+    line-height: 1.65;
+  }
+}
+
+/* Additional optimizations for touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .hero-logo-enhanced:hover {
+    transform: perspective(800px) rotateX(0deg) scale(1);
+    animation-play-state: running;
+  }
+
+  .text-cosmic-glow {
+    animation: none;
+  }
+
+  .heading-cosmic {
+    animation: none;
+  }
+}
+
+/* GPU acceleration for smooth animations */
+.water-ripple-canvas,
+.hero-logo,
+.hero-logo-enhanced,
+.cosmic-particle,
+.heading-cosmic,
+.text-cosmic-glow {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Status indicator */
+.status-cosmic {
+  background: radial-gradient(circle, rgba(34, 197, 94, 0.8) 0%, rgba(34, 197, 94, 0.2) 70%);
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.5);
+}
+
+/* Water ripple effect enhancements */
+.water-ripple-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.water-ripple-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Ensure content is above the water effect */
+.hero-content {
+  position: relative;
+  z-index: 10;
+}
+
+/* Performance optimizations for water effect */
+@media (prefers-reduced-motion: reduce) {
+  .water-ripple-canvas {
+    display: none;
+  }
+  
+  .hero-logo-enhanced {
+    animation: none;
+  }
+  
+  .hero-logo-enhanced:hover {
+    transform: perspective(800px) rotateX(0deg) scale(1.02);
+  }
+
+  .cosmic-particle {
+    animation: none !important;
+  }
+
+  .bg-cosmic-grid {
+    animation: none;
+  }
+}
+
+/* Enhanced scroll animations */
+@keyframes scrollFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.scroll-animate {
+  animation: scrollFadeIn 0.8s ease-out forwards;
+}
+
+/* Enhanced CTA styling */
+.cta-enhanced {
+  font-family: 'Outfit', 'Inter', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+/* Improved link styling */
+a {
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  text-shadow: 0 0 8px rgba(125, 211, 252, 0.4);
+}
+
+/* Radial gradient utility */
+.bg-gradient-radial {
+  background: radial-gradient(var(--tw-gradient-stops));
+}
