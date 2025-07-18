@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://deepsniff.ai/sitemap.xml
+
+# Disallow admin areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /supabase-test/
+
+# Allow important pages
+Allow: /
+Allow: /dashboard
+Allow: /features
+Allow: /how-it-works
+Allow: /use-cases
